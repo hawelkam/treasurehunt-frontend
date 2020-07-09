@@ -26,7 +26,7 @@ class StartPage extends Component {
             <div>
                 <h2>Your name:</h2>
                 <input type="text" value={this.state.playerInput} onChange={(e) => this.handleChange(e)}></input>
-                <button onClick={this.startGame}>Start game</button>
+                <button onClick={this.startGame} className="btn">Start game</button>
             </div>
         )
     }

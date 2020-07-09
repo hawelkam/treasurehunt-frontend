@@ -60,3 +60,46 @@
 .cell.selected {
   background-color: green;
 }
+
+table {
+  margin: 0 auto;
+  width: 50%
+}
+
+tr {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.leaderboard__player {
+  width: 70%;
+}
+
+.leaderboard__score {
+  width: 30%;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+input {
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 200%;
+  margin: 0 auto;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
