@@ -1,8 +1,10 @@
-## Project installaton
+### Project installaton
 
 In the project directory, you can run:
 
-### `yarn start`
+`yarn start`
+or
+`npm install` followed by `npm run start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -12,7 +14,7 @@ You will also see any lint errors in the console.
 
 This project requires a rest api to be present to work correctly. The backend project can be found [here](https://github.com/hawelkam/treasurehunt-backend). It runs by default on port 8080.
 
-### `yarn build`
+`yarn build` or `npm run build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -20,7 +22,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-## Game
+### Game
 
 App starts by asking the user for his name. After it is provided the call to the api is made to get a new game board. If user didn't finish his previous game - the last state will be shown.
 
