@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { setPlayername } from '../actions/player'
-import { handleReceiveBoard } from '../actions/game'
+import { setPlayername } from '../../actions/player'
+import { handleReceiveBoard } from '../../actions/game'
 
-class StartPage extends Component {
+class StartGame extends Component {
     state = {
         playerInput: ''
     }
@@ -26,10 +26,10 @@ class StartPage extends Component {
             <div>
                 <h2>Your name:</h2>
                 <input type="text" value={this.state.playerInput} onChange={(e) => this.handleChange(e)}></input>
-                <button onClick={this.startGame} className="btn">Start game</button>
+                <button onClick={this.startGame} className="btn" disabled={this.state.playerInput === ''}>Start game</button>
             </div>
         )
     }
 }
   
-export default connect()(StartPage);
+export default connect()(StartGame);

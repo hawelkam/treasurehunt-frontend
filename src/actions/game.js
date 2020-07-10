@@ -25,8 +25,6 @@ export function handleReceiveBoard(playerName) {
 
 export function handleCheckCells(playerName, cells) {
     return (dispatch) => {
-        return _checkCells(playerName, cells).then((c) => {
-            dispatch(checkCells(c))
-        });
+        return _checkCells(playerName, cells).then((c) => dispatch(checkCells(c)));
     }
 }

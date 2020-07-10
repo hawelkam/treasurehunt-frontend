@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import GameBoard from './GameBoard'
-import { handleCheckCells } from '../actions/game'
+import { handleCheckCells } from '../../actions/game'
 
 class Game extends Component {
     state = {

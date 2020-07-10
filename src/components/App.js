@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import './components/StartPage'
-import StartPage from './components/StartPage';
-import Game from './components/Game'
-import Leaderboard from './components/Leaderboard'
+import './StartGame/StartGame'
+import StartGame from './StartGame/StartGame';
+import Game from './Game/Game'
+import Leaderboard from './Leaderboard/Leaderboard'
 
 class App extends Component {
   state = {
@@ -21,7 +21,7 @@ class App extends Component {
       <div className="container">
         <h1>Treasure Hunt</h1>
         { this.state.gameState === 'not started' ? (
-          <StartPage gameState={this.changeGameState} />
+          <StartGame gameState={this.changeGameState} />
         ) : this.state.gameState === 'started' ? (
             <Game gameState={this.changeGameState}/>
           ) : (<Leaderboard gameState={this.changeGameState} />) 
