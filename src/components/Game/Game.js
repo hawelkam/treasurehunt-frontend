@@ -48,7 +48,7 @@ class Game extends Component {
                 <h3>Round {this.props.game.rounds + 1}</h3>
                 <h4>Select up to 3 cells</h4>
                 <GameBoard cells={this.props.game.cells} toggleCell={this.toggleCell}/>
-                <button className="btn" onClick={this.checkCells}>Check cells</button>
+                <button className="btn" onClick={this.checkCells} disabled={this.state.selectedCells.length === 0}>Check cells</button>
             </div>
         )
     }
